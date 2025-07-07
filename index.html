@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tax Compliance Research Dashboard</title>
+  <link rel="stylesheet" href="assets/style.css"/>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>📊 Tax Compliance Research Dashboard</h1>
+    <p>Insights from survey data, demographic profiles, and experimental behavior to understand tax compliance.</p>
+  </header>
+
+  <section>
+    <h2>1. Survey Data Cleaning</h2>
+    <p>This section ensures that only valid, unique responses are included. Duplicate entries and uniformly filled Likert-scale responses are removed.</p>
+    <div id="dedup_summary"></div>
+  </section>
+
+  <section>
+    <h2>2. Construct Reliability</h2>
+    <p>We calculate Cronbach's alpha for each theoretical construct to validate internal consistency.</p>
+    <div id="reliability_chart"></div>
+  </section>
+
+  <section>
+    <h2>3. Composite Variable Distributions</h2>
+    <p>Visualizes distributions of latent constructs such as Power, Trust, and General Compliance.</p>
+    <div id="composite_distribution"></div>
+  </section>
+
+  <section>
+    <h2>4. Hypothesis Testing (Slippery Slope Framework)</h2>
+    <p>Regression analyses are performed to test theoretical relationships including:</p>
+    <ul>
+      <li>General Compliance as a function of VTC, ETC, and their interaction</li>
+      <li>Relationship between Power and Trust components</li>
+    </ul>
+    <div id="regression_vtc_etc"></div>
+  </section>
+
+  <section>
+    <h2>5. Demographics and Compliance</h2>
+    <p>This section examines the influence of age, education, and experience on compliance behaviors and attitudes.</p>
+    <div id="demographics_influence"></div>
+  </section>
+
+  <section>
+    <h2>6. Experimental Behavior and Compliance</h2>
+    <p>Analysis of audit effects, ambiguity, asset groups, and real-time compliance behavior in the experiment.</p>
+    <div id="experimental_behavior"></div>
+  </section>
+
+  <section>
+    <h2>7. Compensation and Perceived Risk</h2>
+    <p>We evaluate whether higher compensation correlates with better compliance and if crypto risk/trust perceptions match real behaviors.</p>
+    <div id="compensation_analysis"></div>
+  </section>
+
+  <section>
+    <h2>8. Strategy Changes and Feedback</h2>
+    <p>Analysis of comments on experiment clarity and strategy changes. Potential topic modeling on qualitative feedback.</p>
+    <div id="comments_feedback"></div>
+  </section>
+
+  <footer>
+    <p>Created by Research Team | Last updated: 2025</p>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>

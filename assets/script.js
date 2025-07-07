@@ -1,0 +1,1 @@
+console.log("Plotly charts will be injected here soon.");
